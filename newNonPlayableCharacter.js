@@ -54,6 +54,7 @@ function newNonPlayableCharacter(x, y) {
     return {
         element: element,
         walkEast: walkEast,
+        walkSouth: walkSouth,
         stop: stop
     }
 }
