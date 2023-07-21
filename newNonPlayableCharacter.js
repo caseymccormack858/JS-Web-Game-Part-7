@@ -31,17 +31,17 @@ function newNonPlayableCharacter(x, y) {
         console.log('Returned value:', result);
     }
 
-    function walkNorth() {
+    async function walkNorth() {
         direction = 'north'
         element.src = `./assets/red-character/north.gif`
     }
 
-    function walkWest() {
+    async function walkWest() {
         direction = 'west'
         element.src = `./assets/red-character/west.gif`
     }
 
-    function walkSouth() {
+    async function walkSouth() {
         direction = 'south'
         element.src = `./assets/red-character/south.gif`
     }
@@ -55,6 +55,8 @@ function newNonPlayableCharacter(x, y) {
         element: element,
         walkEast: walkEast,
         walkSouth: walkSouth,
+        walkNorth: walkNorth,
+        walkWest: walkWest,
         stop: stop
     }
 }
