@@ -10,7 +10,7 @@ async function moveNPC() {
     await npc.walkEast(2000);
     console.log('Finished walking east');
     console.log('Start walking south');
-    npc.walkSouth();
+    npc.walkSouth(300);
     console.log('Finished walking south');
 }
 moveNPC ()
