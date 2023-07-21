@@ -31,19 +31,28 @@ function newNonPlayableCharacter(x, y) {
         console.log('Returned value:', result);
     }
 
-    async function walkNorth() {
+    async function walkNorth(time) {
         direction = 'north'
-        element.src = `./assets/red-character/north.gif`
+        element.src = `./assets/red-character/north.gif`;
+        const result = await sleep(time);
+        stop();
+        console.log('Returned value:', result);
     }
 
-    async function walkWest() {
+    async function walkWest(time) {
         direction = 'west'
-        element.src = `./assets/red-character/west.gif`
+        element.src = `./assets/red-character/west.gif`;
+        const result = await sleep(time);
+        stop();
+        console.log('Returned value:', result);
     }
 
-    async function walkSouth() {
+    async function walkSouth(time) {
         direction = 'south'
-        element.src = `./assets/red-character/south.gif`
+        element.src = `./assets/red-character/south.gif`;
+        const result = await sleep(time);
+        stop();
+        console.log('Returned value:', result);
     }
 
     function stop() {
