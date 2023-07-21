@@ -12,6 +12,7 @@ async function controlCharacter() {
     console.log('Start walking south');
     npc.walkSouth();
     console.log('Finished walking south');
+}
 // Create the inventory
 const inventory = newInventory()
 move(inventory).to(0, 0)
