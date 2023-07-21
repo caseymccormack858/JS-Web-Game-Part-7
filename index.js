@@ -5,11 +5,10 @@ const pc = newPlayableCharacter(100, 110)
 const npc = newNonPlayableCharacter(50, 300)
 
 // have the NPC start walking east immediately
-sync function controlCharacter() {
+async function controlCharacter() {
     console.log('Start walking east');
     await npc.walkEast(2000);
     console.log('Finished walking east');
-    
     console.log('Start walking south');
     npc.walkSouth();
     console.log('Finished walking south');
